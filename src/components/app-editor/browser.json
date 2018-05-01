@@ -1,0 +1,7 @@
+{
+  "dependencies": [
+    {"url":"http://localhost:35729/livereload.js?snipver=1","type":"js","if-flag":"dev"},
+    {"path":"https://fonts.googleapis.com/css?family=Hind|Roboto","type":"css"},
+    "./style.less"
+  ]
+}

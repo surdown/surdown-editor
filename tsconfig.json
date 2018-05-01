@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2017",
+        "noImplicitAny": false,
+        "sourceMap": false  ,
+        "baseUrl": ".",
+        "types": [ "surdownjs","intern","systemjs"],
+      "paths": {
+        
+      }      
+    },
+    "exclude": [
+      
+    ]
+   
+  } 

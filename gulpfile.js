@@ -3,13 +3,14 @@ const livereload = require('gulp-livereload');
 const directoryName = 'public';
 
 const fs = require('fs')
-let isDev = process.argv.indexOf('--dev') >= 0;
-let isProd = !isDev;
+
 var exec = require('child_process').exec;
 let flags = process.argv.splice(3)
 flags = flags.map((item) => {
     return item.replace('--', '');
 })
+let isDev = flags.indexOf('dev') >= 0;
+let isProd = !isDev;
 require('marko/node-require');
 
 require('lasso').configure({
@@ -24,14 +25,14 @@ require('lasso').configure({
     ],
     "fileWriter": {
         "outputDir": `${directoryName}/static`,
-        "fingerprintsEnabled": false,
+        "fingerprintsEnabled": isProd,
         "urlPrefix": "static"
 
 
     },
-    "minify": false,
+    "minify": isProd,
     "resolveCssUrls": true,
-    "bundlingEnabled": false,
+    "bundlingEnabled": isProd,
     "bundles": [
 
     ],

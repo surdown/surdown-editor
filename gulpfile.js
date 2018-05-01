@@ -11,6 +11,7 @@ flags = flags.map((item) => {
 })
 let isDev = flags.indexOf('dev') >= 0;
 let isProd = !isDev;
+console.log('isProd',isProd);
 require('marko/node-require');
 
 require('lasso').configure({
@@ -93,6 +94,7 @@ function buildShell(done) {
         cmd = cmd + ` --${flag}`
     }
     shouldBuild && exec(cmd, function (err, stdout, stderr) {
+        console.log(stdout);
         err && console.log(err);
         livereload.reload();
     });
@@ -105,7 +107,7 @@ function buildShell(done) {
 
 function watch() {
     livereload.listen();
-    gulp.watch(['lib/**/*.js', 'components/**/*.js', 'components/**/*.marko'], buildShell);
+    gulp.watch(['src/lib/**/*.js', 'src/components/**/*.js', 'src/components/**/*.marko'], buildShell);
 }
 exports.watch = watch;
 

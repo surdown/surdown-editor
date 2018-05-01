@@ -4,35 +4,60 @@ import * as SD from 'surdownjs';
 
 
 var comp = {
-
+	
 	onCreate: function () {
 		this.state = {
 		};
 	},
-	
-	textchange:function(event){
+
+	textchange: function (event) {
 		console.log(event.target.value);
 	},
-	play:function(){
-		let input  = this.getEl('textarea');
+	play: function () {
+		let input = this.getEl('textarea');
 		const Tone = ToneFactory.Instance();
-		let str = input.value;
-		localStorage.setItem('composition',str);
-		// input.focus();
-		// input.setSelectionRange(2,5);
-		
-		new SD.Interpreter(str).parse().then((head)=>{
-			new SD.GrpInterpreter().parse(head).then((notes)=>{
-			
-				let tl = new SD.TimeLine(Tone,"0m")
+		let selectionStart = input.selectionStart;
+		let selectionEnd = input.selectionEnd;
+		let isSelected = (selectionStart !== selectionEnd);
+		let str: string = isSelected && input.value.length ? input.value.substring(selectionStart, selectionEnd) : input.value;
+
+		localStorage.setItem('composition', input.value);
+
+		console.log('playing', str);
+		let startsWithBar = str.charAt(0) === '|' || str.charAt(0) === '।';
+		let endsWithBar = str.charAt(str.length - 1) === '|' || str.charAt(str.length - 1) === '।';
+		str = startsWithBar ? str : ('|' + str);
+		str = endsWithBar ? str : (str + '|');
+		input.focus();
+		new SD.Interpreter(str).parse().then((head) => {
+			new SD.GrpInterpreter().parse(head).then((notes) => {
+
+				let tl = new SD.TimeLine(Tone, "0m")
 				tl.assign(notes);
-				let track = new SD.Track(Tone,tl,this.piano,63);
+				let track = new SD.Track(Tone, tl, this.piano, 63);
 				track.play();
-				
+
 			})
 		})
 	},
 	onMount: function () {
+		this.keyMap={};
+		document.addEventListener('keyup', (event:any) => {
+			
+			let keyName = event.key
+			
+			this.keyMap[keyName] = false;
+			this.keyMap['Enter'] = false;
+		
+		});
+		document.addEventListener('keydown', (event:any) => {
+			
+			let keyName = event.key
+			
+			this.keyMap[keyName] = true;
+			this.keyMap['Meta'] && this.keyMap['Enter'] && this.play();
+		
+		});
 		this.getEl('textarea').value = localStorage.getItem('composition');
 		const Tone = ToneFactory.Instance();
 
@@ -55,21 +80,21 @@ var comp = {
 			}).toMaster();
 
 
-		Tone.Transport.bpm.value = 60;
+		Tone.Transport.bpm.value = 100;
 
 		Tone.Buffer.on('load', () => {
 
 			// let str = '|<सग>प-<पग>|</नग>प-<पग>|</नर>म-<पम>|ग---।रग-<रेस>।रस/ध-।/धर-प।गरस-।<सग>प<गप>-।<धप>गरेरे।--<पप>म।ग<रर>-<मम>।गरस-।'
 
-			
+
 
 		})
 
-		
+
 
 	},
 
-	
+
 
 
 }

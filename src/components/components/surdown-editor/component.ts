@@ -80,7 +80,7 @@ var comp = {
 			}).toMaster();
 
 
-		Tone.Transport.bpm.value = 100;
+		Tone.Transport.bpm.value = 80;
 
 		Tone.Buffer.on('load', () => {
 

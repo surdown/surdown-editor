@@ -21,7 +21,7 @@
     "marko": "^4.9.7"
   },
   "dependencies": {
-    "surdownjs": "0.0.1",
+    "surdownjs": "^0.0.2",
     "tone": "^0.12.80"
   }
 }

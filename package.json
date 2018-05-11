@@ -12,16 +12,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@lasso/marko-taglib": "^1.0.10",
-    "gulp": "^4.0.0",
-    "gulp-livereload": "^3.8.1",
-    "lasso": "^3.1.4",
-    "lasso-less": "^2.4.7",
-    "lasso-marko": "^2.4.0",
-    "marko": "^4.9.7"
+    "@lasso/marko-taglib": "~1.0.10",
+    "gulp": "~4.0.0",
+    "gulp-livereload": "~3.8.1",
+    "lasso": "~3.1.4",
+    "lasso-less": "~2.4.7",
+    "lasso-marko": "~2.4.0",
+    "marko": "~4.9.7"
   },
   "dependencies": {
-    "surdownjs": "^0.0.2",
-    "tone": "^0.12.80"
+    "surdownjs": "~0.0.9",
+    "tone": "~0.12.80"
   }
 }

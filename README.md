@@ -14,10 +14,14 @@ although **sa** can actually be placed anywhere in the Western system, for conve
 |T2|S|r|R|g|G|m|M|P|d|D|n|N|
 |T1|स|_रे |रे|_ग|ग|म|^म |प|_ध|ध|_नि|नी|
 
-> को. = कोमल 
-> शु. = शुध 
+> को. = कोमल , शु. = शुध 
 
 
 >For now , the **surdown editor** software  will be supporting the `Type T1`(*i.e., Sanskrit/Hindi letters*) as an initial implementation.
 
 >In future  support for *'Type T2'*(*i.e. Roman letters*) will be added.
+
+
+## Demo
+
+Live Editor - [https://surdown.github.io](https://surdown.github.io)

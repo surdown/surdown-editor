@@ -29,6 +29,10 @@ var comp = {
 		str = startsWithBar ? str : ('|' + str);
 		str = endsWithBar ? str : (str + '|');
 		input.focus();
+
+		Tone.context.resume().then(() => {
+		
+		  
 		new SD.Interpreter(str).parse().then((head) => {
 			new SD.GrpInterpreter().parse(head).then((notes) => {
 
@@ -39,8 +43,15 @@ var comp = {
 
 			})
 		})
+	});
 	},
 	onMount: function () {
+
+		let view = require('../../fullscreen-loader');
+		var loader = view.renderSync({});
+		let a = loader.appendTo(document.body);
+		
+
 		this.keyMap={};
 		document.addEventListener('keyup', (event:any) => {
 			
@@ -84,12 +95,11 @@ var comp = {
 
 		Tone.Buffer.on('load', () => {
 
-			// let str = '|<सग>प-<पग>|</नग>प-<पग>|</नर>म-<पम>|ग---।रग-<रेस>।रस/ध-।/धर-प।गरस-।<सग>प<गप>-।<धप>गरेरे।--<पप>म।ग<रर>-<मम>।गरस-।'
-
+			
+			loader.getComponent().destroy();
 
 
 		})
-
 
 
 	},

@@ -13,15 +13,16 @@
   "license": "ISC",
   "devDependencies": {
     "@lasso/marko-taglib": "~1.0.10",
+    "@types/node": "^10.0.9",
     "gulp": "~4.0.0",
     "gulp-livereload": "~3.8.1",
-    "lasso": "~3.1.4",
+    "lasso": "^3.1.5",
     "lasso-less": "~2.4.7",
-    "lasso-marko": "~2.4.0",
+    "lasso-marko": "^2.4.1",
     "marko": "~4.9.7"
   },
   "dependencies": {
-    "surdownjs": "~0.0.9",
+    "surdownjs": "~0.0.10",
     "tone": "~0.12.80"
   }
 }

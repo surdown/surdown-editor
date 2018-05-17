@@ -38,13 +38,13 @@ For example , pitch in the Indian system(s) is not absolute, like the 440 A of t
 
 > The Surdown Notations are written next to actual handwritten notations for easy referece
 
-|**Register (सप्तक)**       | Handwritten Roman | Handwritten Devanagari | `Surdown Devanagari` |
+|**Register (सप्तक)**       | Handwritten Roman | Handwritten Devanagari | **Surdown Devanagari** |
 |--------------------------|-------------------|------------------------|--------------------|
-|**low (mandra)**          | Ṣ Ḍ ṃ             | स़ ध़ म़                  |`/स /ध /म `           | 
-|**Middle (madhya)**       | S R G             | स रे ग                  | `स र  ग   `           | 
-|**High (tara)**           | Ṡ Ṙ Ġ             | सं रें गं                  | `*स *र *ग`            | 
-|**very low (ati mandra )**| S̤ D̤ M̤             | स़़ ध़़ म़़                  | `//स //ध //म`        | 
-|**very high (ati tara )** | S̈ D̈ M̈             | सऺऺऺऺ ऺ   धऺऺ ऺ  मऺ ऺ              | `**स **ध **म`        |
+|**low (mandra)**          | Ṣ Ḍ ṃ             | स़ ध़ म़                  |/स /ध /म            | 
+|**Middle (madhya)**       | S R G             | स रे ग                  | स र  ग              | 
+|**High (tara)**           | Ṡ Ṙ Ġ             | सं रें गं                  | *स *र *ग            | 
+|**very low (ati mandra )**| S̤ D̤ M̤             | स़़ ध़़ म़़                  | //स //ध //म        | 
+|**very high (ati tara )** | S̈ D̈ M̈             | सऺऺऺऺ ऺ   धऺऺ ऺ  मऺ ऺ              | **स **ध **म        |
 ## Demo
 
 Live Editor - [https://surdown.github.io](https://surdown.github.io)

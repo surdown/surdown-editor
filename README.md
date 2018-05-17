@@ -38,7 +38,7 @@ For example , pitch in the Indian system(s) is not absolute, like the 440 A of t
 
 > The Surdown Notations are written next to actual handwritten notations for easy referece
 
-|**Register (सप्तक)**       | Handwritten Roman | Handwritten Devanagari | **Surdown Devanagari** |
+| **Register (सप्तक)**       | Handwritten Roman | Handwritten Devanagari | **Surdown Devanagari** |
 |--------------------------|-------------------|------------------------|--------------------|
 |**low (mandra)**          | Ṣ Ḍ ṃ             | स़ ध़ म़                  |/स /ध /म            | 
 |**Middle (madhya)**       | S R G             | स रे ग                  | स र  ग              | 

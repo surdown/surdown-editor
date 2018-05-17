@@ -14,22 +14,37 @@ For example , pitch in the Indian system(s) is not absolute, like the 440 A of t
 
 ## Notation
 
+
 > Although **सा** can actually be placed anywhere in the Western system, for convention C is usually chosen. And if C is chosen for the tonic, then the twelve notes of the chromatic scale, each a half step apart, can be thus represented:
+>
+>|Type|स|को. रे|शु.रे|को. ग |शु. ग|शु. म | तीव्र म|शु. प |को. ध |शु. ध|को. नि |शु. नि|
+>|-|-|-|-|-|-|-|-|-|-|-|-|-|
+>|T2|S|r|R|g|G|m|M|P|d|D|n|N|
+>|T1|स|_रे |रे|_ग|ग|म|^म |प|_ध|ध|_नि|नी|
+>
+>को. = कोमल (flat)   
+>
+>शु. = शुध (natural)
+>
+> For now , the **surdown editor** software  will be supporting the **Type T1**(*i.e., Sanskrit/Hindi letters*) as an initial implementation.
+>
+> In future  support for **Type T2** (*i.e. Roman letters*) will be added.
 
 
-|Type|स|को. रे|शु.रे|को. ग |शु. ग|शु. म | तीव्र म|शु. प |को. ध |शु. ध|को. नि |शु. नि|
-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-|T2|S|r|R|g|G|m|M|P|d|D|n|N|
-|T1|स|_रे |रे|_ग|ग|म|^म |प|_ध|ध|_नि|नी|
-
-> को. = कोमल , शु. = शुध 
 
 
->For now , the **surdown editor** software  will be supporting the `Type T1`(*i.e., Sanskrit/Hindi letters*) as an initial implementation.
+## Register
+--------
 
->In future  support for *'Type T2'*(*i.e. Roman letters*) will be added.
+> The Surdown Notations are written next to actual handwritten notations for easy referece
 
-
+|**Register (सप्तक)**       | Handwritten Roman | Handwritten Devanagari | `Surdown Devanagari` |
+|--------------------------|-------------------|------------------------|--------------------|
+|**low (mandra)**          | Ṣ Ḍ ṃ             | स़ ध़ म़                  |`/स /ध /म `           | 
+|**Middle (madhya)**       | S R G             | स रे ग                  | `स र  ग   `           | 
+|**High (tara)**           | Ṡ Ṙ Ġ             | सं रें गं                  | `*स *र *ग`            | 
+|**very low (ati mandra )**| S̤ D̤ M̤             | स़़ ध़़ म़़                  | `//स //ध //म`        | 
+|**very high (ati tara )** | S̈ D̈ M̈             | सऺऺऺऺ ऺ   धऺऺ ऺ  मऺ ऺ              | `**स **ध **म`        |
 ## Demo
 
 Live Editor - [https://surdown.github.io](https://surdown.github.io)

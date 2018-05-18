@@ -6,26 +6,23 @@ Live Editor - [https://surdown.github.io](https://surdown.github.io)
 Examples
 =========
 
-> Copy-paste to listen on 
-> 
-> [https://surdown.github.io](https://surdown.github.io)
+> Copy-paste to listen on [https://surdown.github.io](https://surdown.github.io)
+-----
 
-`1. om jai jagdish`
----
+**1. om jai jagdish**
 ```
 ।स<सस>स</नस>।र--<रग>।म<पप>ध<मग>।र--<रर> |<रग><रग>म<मम>।
 गस<रग><रग>|म<मम> ग <सस> |सरेग<स/नि>।/ध---।रे<रेरे>ग<स/न>।स---। 
 ```
+------
 
-
-`2. yaadein`
----
+**2. yaadein**
 ```
 ।<सग>प -<प ग >।</न ग > प - <प ग > । </न र >म - <प म > 
 । ग - र ग । - <र स > र स । /ध - /ध रे ।-प ग र । स 
 ```
 
-
+---------
 
 What is Surdown?
 =========

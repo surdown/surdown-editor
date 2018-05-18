@@ -3,8 +3,8 @@ Demo
 
 Live Editor - [https://surdown.github.io](https://surdown.github.io)
 
-Examples
-=========
+### Examples
+
 
 > Copy-paste to listen on [https://surdown.github.io](https://surdown.github.io)
 -----

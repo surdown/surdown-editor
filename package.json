@@ -22,7 +22,7 @@
     "marko": "~4.9.7"
   },
   "dependencies": {
-    "surdownjs": "~0.0.12",
+    "surdownjs": "~0.1.1",
     "tone": "~0.12.80"
   }
 }

@@ -31,18 +31,7 @@ var comp = {
 		input.focus();
 
 		Tone.context.resume().then(() => {
-		
-		  
-		new SD.Interpreter(str).parse().then((head) => {
-			new SD.GrpInterpreter().parse(head).then((notes) => {
-
-				let tl = new SD.TimeLine(Tone, "0m")
-				tl.assign(notes);
-				let track = new SD.Track(Tone, tl, this.piano, 63);
-				track.play();
-
-			})
-		})
+		  new SD.Player(Tone,this.piano,63).play(str);
 	});
 	},
 	onMount: function () {

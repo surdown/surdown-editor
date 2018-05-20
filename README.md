@@ -30,7 +30,7 @@ What is Surdown?
 Surdown is a plain text format for writing musical notations. Surdown text
 can be used to notate structured form of a musical composition in form of a document.
 
-Surdown name is inspired from Markdown](https://en.wikipedia.org/wiki/Markdown)
+Surdown name is inspired from [Markdown](https://en.wikipedia.org/wiki/Markdown)
 
 
 Introduction to existing Notation system

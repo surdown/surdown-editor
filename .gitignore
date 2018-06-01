@@ -5,8 +5,6 @@ node_modules
 .DS_Store
 *.marko.js
 *.js.map
-*.js
-!gulpfile.js
 package-lock.json
 yarn.lock
 yarn-error.log

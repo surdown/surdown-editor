@@ -121,4 +121,52 @@ A beat divided into two parts (e.g., **eighth notes**)is written
 <प--म--ग->
 ```
 
+Specify BPM
+=========
 
+
+BPM for a song can be specified at the start of a surdown document inside `||`. For example
+follow song will play in bpm 60
+
+
+```
+||60||
+
+|स रे  । ग - म । प - । ध नी *स 
+```
+
+Specify Scale
+=========
+
+
+Scale for a song can be specified at the start of a surdown document inside `||`. For example
+follow song will play in bpm 60 and scale of `c3#` i.e. `C sharp` 
+
+> Here 3 next to c specifies the octave number of the key starting with c0 and going up c1,c2...etc
+
+
+
+```
+||60||c3#||
+
+|स रे  । ग - म । प - । ध नी *स 
+```
+
+Other examples 
+-----
+
+Song played with bpm 120 and scale of d and in the 4th the octave
+```
+||120||d4||
+
+|स रे  । ग - म । प - । ध नी *स 
+```
+
+-----
+
+Song played with bpm 850 and scale of B and in the 2th the octave
+```
+||120||b#2||
+
+|स रे  । ग - म । प - । ध नी *स 
+```

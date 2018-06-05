@@ -13,12 +13,13 @@ var comp = {
 	textchange: function (event) {
 		console.log(event.target.value);
 	},
-	play: function () {
+	play: async function () {
 		let input = this.getEl('textarea');
 		const Tone = ToneFactory.Instance();
 		let selectionStart = input.selectionStart;
 		let selectionEnd = input.selectionEnd;
 		let isSelected = (selectionStart !== selectionEnd);
+		let preprocessorResult = await new SD.PreProcessor().parse(input.value);
 		let str: string = isSelected && input.value.length ? input.value.substring(selectionStart, selectionEnd) : input.value;
 
 		localStorage.setItem('composition', input.value);
@@ -31,6 +32,7 @@ var comp = {
 		input.focus();
 
 		Tone.context.resume().then(() => {
+			SD.Player.set(preprocessorResult.scale,preprocessorResult.bpm);
 		  new SD.Player(Tone,this.piano,63).play(str);
 	});
 	},

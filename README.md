@@ -18,10 +18,13 @@ Live Editor - [https://surdown.github.io](https://surdown.github.io)
 
 **2. yaadein**
 ```
-।<सग>प -<प ग >।</न ग > प - <प ग > । </न र >म - <प म > 
-। ग --- |र ग  - <र स > |र स  /ध -| /ध रे -प |ग र  स <-स>|< र ग>- <र ग ><-प>।
-< ग र><-स> <-/न>-।
+||75||d||
+
+।<सग>प --।</न ग > प - - । </_न   र >म - - 
+। ग --- |र ग  - <र स > |र <स  /ध> --| /ध रे -प |ग <र  स> --|<स र ><ग-><-र> <ग- >।
+<प ग ><र-><स/न>-।
 <पप >^म ^म<ग र > ।<- म> <म  ग><- र><-स>।--।
+
 
 
 ```
@@ -164,9 +167,10 @@ Song played with bpm 120 and scale of d and in the 4th the octave
 
 -----
 
-Song played with bpm 850 and scale of B and in the 2th the octave
+Song played with bpm 120 and scale of B and in the 2nd octave
+
 ```
-||120||b#2||
+||120||b2||
 
 |स रे  । ग - म । प - । ध नी *स 
 ```

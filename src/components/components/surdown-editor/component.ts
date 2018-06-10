@@ -1,5 +1,6 @@
 import ToneFactory from "../../../lib/ToneFactory";
 import * as SD from 'surdownjs';
+import SampleCompositions from '../../../lib/SampleCompositions';
 
 
 
@@ -15,25 +16,13 @@ var comp = {
 	},
 	play: async function () {
 		let input = this.getEl('textarea');
+		
 		const Tone = ToneFactory.Instance();
-		let selectionStart = input.selectionStart;
-		let selectionEnd = input.selectionEnd;
-		let isSelected = (selectionStart !== selectionEnd);
-		let preprocessorResult = await new SD.PreProcessor().parse(input.value);
-		let str: string = isSelected && input.value.length ? input.value.substring(selectionStart, selectionEnd) : input.value;
-
 		localStorage.setItem('composition', input.value);
-
-		console.log('playing', str);
-		let startsWithBar = str.charAt(0) === '|' || str.charAt(0) === '।';
-		let endsWithBar = str.charAt(str.length - 1) === '|' || str.charAt(str.length - 1) === '।';
-		str = startsWithBar ? str : ('|' + str);
-		str = endsWithBar ? str : (str + '|');
 		input.focus();
 
 		Tone.context.resume().then(() => {
-			SD.Player.set(preprocessorResult.scale,preprocessorResult.bpm);
-		  new SD.Player(Tone,this.piano,63).play(str);
+		  new SD.Player(Tone,this.piano,63).play(input.value,input.selectionStart,input.selectionEnd);
 	});
 	},
 	onMount: function () {
@@ -60,7 +49,7 @@ var comp = {
 			this.keyMap['Meta'] && this.keyMap['Enter'] && this.play();
 		
 		});
-		this.getEl('textarea').value = localStorage.getItem('composition');
+		this.getEl('textarea').value = localStorage.getItem('composition') || SampleCompositions.basicSargam;;
 		const Tone = ToneFactory.Instance();
 
 		this.piano = new Tone.Sampler({
@@ -94,6 +83,7 @@ var comp = {
 
 
 	},
+
 
 
 

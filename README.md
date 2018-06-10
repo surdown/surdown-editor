@@ -61,9 +61,6 @@ Notation
 >
 >शु. = शुध (natural)
 >
-> For now , the **surdown editor** software  will be supporting the **Type T1**(*i.e., Sanskrit/Hindi letters*) as an initial implementation.
->
-> In future  support for **Type T2** (*i.e. Roman letters*) will be added.
 
 
 

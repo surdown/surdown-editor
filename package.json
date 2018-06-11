@@ -22,7 +22,9 @@
     "marko": "~4.9.7"
   },
   "dependencies": {
+    "@material/drawer": "^0.36.0",
     "@material/layout-grid": "^0.34.0",
+    "@material/top-app-bar": "^0.36.0",
     "lasso-sass": "^3.0.0",
     "material-components-marko": "^1.0.2",
     "surdownjs": "~0.3.0",

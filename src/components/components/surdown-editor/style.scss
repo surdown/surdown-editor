@@ -1,9 +1,6 @@
-@import "@material/button/mdc-button";
 
 
-.container{
-    position: relative;
-}
+
 textarea {
     resize: none;
     &.surdown{
@@ -14,19 +11,3 @@ textarea {
     }
   }
 
-
- .mdc-button.sd-play-button{
-    @include mdc-button-ink-color(teal);
-    @include mdc-states(teal);
-    @include mdc-button-container-fill-color(white);
-     position: absolute;
-     bottom: 0px;
-     width: 100%;
-     height: 2em;
-     background-color: floralwhite;
-     color: dimgrey;
-     text-align: center;
-    font-size: 2em;
-    text-decoration: none;
- 
-}

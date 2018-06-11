@@ -1,0 +1,19 @@
+<div class="outer-container">
+    <app-top-bar on-menu( "menu")></app-top-bar>
+    <app-drawer key="drawer"></app-drawer>
+
+    <div class="container">
+        <div class="editor-grid">
+            <surdown-editor key="editor"></surdown-editor>
+
+        </div>
+
+        <div class="action-grid">
+            <m-button on-click( "play") class="mdc-button sd-play-button" ripple=true>
+                <@body>
+                    Play
+                </@body>
+            </m-button>
+        </div>
+    </div>
+</div>

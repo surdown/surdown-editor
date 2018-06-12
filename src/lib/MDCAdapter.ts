@@ -1,7 +1,7 @@
 // import {MDCRipple} from '@material/ripple';
 declare var mdc: any
 
-type MDCType = 'MDCTopAppBar' | 'MDCRipple' | 'MDCTemporaryDrawer';
+type MDCType = 'MDCTopAppBar' | 'MDCRipple' | 'MDCTemporaryDrawer' | 'MDCTextField';
 
 export default class MDCAdapter{
 
@@ -11,7 +11,8 @@ export default class MDCAdapter{
         let map = {
             'MDCRipple' : mdc.ripple.MDCRipple,
             'MDCTopAppBar' : mdc.topAppBar.MDCTopAppBar,
-            'MDCTemporaryDrawer' : mdc.drawer.MDCTemporaryDrawer
+            'MDCTemporaryDrawer' : mdc.drawer.MDCTemporaryDrawer,
+            'MDCTextField' :  mdc.textfield.MDCTextField
         }
 
         return map[type].attachTo(el)

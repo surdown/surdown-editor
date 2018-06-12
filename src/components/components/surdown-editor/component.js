@@ -2,6 +2,7 @@
 const ToneFactory_1 = require("../../../lib/ToneFactory");
 const SD = require("surdownjs");
 const SampleCompositions_1 = require("../../../lib/SampleCompositions");
+const MDCAdapter_1 = require("../../../lib/MDCAdapter");
 var comp = {
     onCreate: function () {
         this.state = {};
@@ -19,6 +20,7 @@ var comp = {
         });
     },
     onMount: function () {
+        this.comp = MDCAdapter_1.default.attachTo(this.getEl('editor'), 'MDCTextField');
         let view = require('../../fullscreen-loader');
         var loader = view.renderSync({});
         let a = loader.appendTo(document.body);
@@ -57,5 +59,8 @@ var comp = {
             loader.getComponent().destroy();
         });
     },
+    onDestroy() {
+        this.comp && this.comp.destroy();
+    }
 };
 module.exports = comp;

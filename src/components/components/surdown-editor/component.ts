@@ -1,8 +1,7 @@
 import ToneFactory from "../../../lib/ToneFactory";
 import * as SD from 'surdownjs';
 import SampleCompositions from '../../../lib/SampleCompositions';
-
-
+import MDCAdapter from '../../../lib/MDCAdapter';
 
 var comp = {
 	
@@ -26,6 +25,8 @@ var comp = {
 	});
 	},
 	onMount: function () {
+
+		this.comp  = MDCAdapter.attachTo(this.getEl('editor'),'MDCTextField');
 
 		let view = require('../../fullscreen-loader');
 		var loader = view.renderSync({});
@@ -83,7 +84,9 @@ var comp = {
 
 
 	},
-
+	onDestroy(){
+		this.comp && this.comp.destroy();
+	}
 
 
 

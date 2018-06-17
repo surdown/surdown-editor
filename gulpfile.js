@@ -26,7 +26,7 @@ require('lasso').configure({
         {
             "plugin": "lasso-sass",
             "config":{
-                "includePaths":["./node_modules"]
+                "includePaths":["./node_modules","./src/styles"]
             }
         }
     ],
@@ -113,7 +113,7 @@ function buildShell(done) {
 
 function watch() {
     livereload.listen();
-    gulp.watch(['src/lib/**/*.js','src/components/**/*.scss' ,'src/components/**/*.js', 'src/components/**/*.marko'], buildShell);
+    gulp.watch(['src/lib/**/*.js','src/components/**/*.scss','src/styles/**/*.scss' ,'src/components/**/*.js', 'src/components/**/*.marko'], buildShell);
 }
 exports.watch = watch;
 

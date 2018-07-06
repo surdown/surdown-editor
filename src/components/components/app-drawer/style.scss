@@ -1,8 +1,10 @@
+@import "theme";
+
 @import "@material/drawer/mdc-drawer";
 
 .mdc-drawer {
-    @include mdc-drawer-fill-color(teal);
-    @include mdc-drawer-ink-color(white);
-    @include mdc-drawer-scrim-color(white, 0.8);
+    @include mdc-drawer-fill-color($mdc-theme-primary);
+    @include mdc-drawer-ink-color($mdc-theme-on-primary);
+    @include mdc-drawer-scrim-color($mdc-theme-secondary, 0.8);
     
   }

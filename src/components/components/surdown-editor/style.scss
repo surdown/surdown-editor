@@ -1,9 +1,19 @@
-
+@import "theme";
 @import "@material/textfield/mdc-text-field";
 
-.mdc-text-field--textarea{
+.surdown-container.mdc-text-field--textarea{
+    border-color: white;
+    &.mdc-text-field--focused:not(.mdc-text-field--disabled) {
+        border-color: white;
+        
+        .mdc-text-field__input:focus{
+            border-color: white;
+
+        }
+        
+    }
     
-    @include mdc-text-field-hover-outline-color(white);
+
 }
 
 textarea {

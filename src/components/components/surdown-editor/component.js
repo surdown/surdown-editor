@@ -54,6 +54,8 @@ var comp = {
             'release': 1,
             'baseUrl': 'media/harmonium/'
         }).toMaster();
+        var vol = new Tone.Volume(0);
+        this.piano.chain(vol, Tone.Master);
         Tone.Transport.bpm.value = 80;
         Tone.Buffer.on('load', () => {
             loader.getComponent().destroy();

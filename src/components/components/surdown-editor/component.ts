@@ -72,6 +72,9 @@ var comp = {
 			}).toMaster();
 
 
+			var vol = new Tone.Volume(0);
+			this.piano.chain(vol, Tone.Master);
+
 		Tone.Transport.bpm.value = 80;
 
 		Tone.Buffer.on('load', () => {

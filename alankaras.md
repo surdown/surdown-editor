@@ -51,9 +51,9 @@ SS SS SS SS SS
 ```
 ||40||d||
 
-S r G S r G S r G S r G
+SrG SrG SrG SrG
 rGm rGm rGm rGm
-GmP GmP GmP
+GmP GmP GmP GmP
 mPd mPd mPd mPd
 PdN PdN PdN PdN
 dN*S dN*S dN*S dN*S
